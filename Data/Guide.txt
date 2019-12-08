@@ -1,0 +1,7 @@
+//** API - NodeJS with MongoDB v4.2 */
+1. npm i
+2. npm start OR npm run start:dev
+
+//** APP */
+1. npm i
+2. npm start OR ng serve

@@ -1,0 +1,104 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Contacts",
+		"_postman_id": "548ee7db-044f-358c-a31d-e55e117142cf",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetAllContacts",
+			"request": {
+				"url": "http://localhost:3000/contacts",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "CreateNewContact",
+			"request": {
+				"url": "http://localhost:3000/contacts",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Durgesh Tambe\",\n\t\"email\": \"dntambe@gmail.com\",\n\t\"gender\": \"Male\",\n\t\"phone\": \"9096978887\",\n\t\"create_date\": \"2019-12-08\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GetContactById",
+			"request": {
+				"url": "http://localhost:3000/contacts/5dec07088a46c22f400a6240",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateContactById",
+			"request": {
+				"url": "http://localhost:3000/contacts/5debf955dee1042a6841b4d2",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Durgesh N Tambe\",\n\t\"email\": \"dntambe@gmail.com\",\n\t\"gender\": \"Male\",\n\t\"phone\": \"9096978887\",\n\t\"create_date\": \"2019-12-08\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteContactById",
+			"request": {
+				"url": "http://localhost:3000/contacts/5dec07088a46c22f400a6240",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "ModifyContactById",
+			"request": {
+				"url": "http://localhost:3000/contacts/5debf955dee1042a6841b4d2",
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Durgesh N Tambe\",\n\t\"email\": \"dntambe@gmail.com\",\n\t\"gender\": \"Male\",\n\t\"phone\": \"9096978887\",\n\t\"create_date\": \"2019-12-08\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
